@@ -95,6 +95,18 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen font-sans antialiased;
+  }
+}
+
+@theme {
+  --font-sans: 'Inter', 'sans-serif';
+}
+
+@utility container {
+  margin: auto;
+  padding: 0 1rem;
+  @media (width >= 40rem) {
+    padding: 0 2rem;
   }
 }
