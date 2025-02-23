@@ -1,8 +1,8 @@
 import { Icons } from '@/components/Icons';
-import { siteConfig } from '@/config/site';
-import { NavLink, useLocation } from 'react-router';
 import { mainNavItems } from '@/config/main-nav';
+import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';
+import { NavLink, useLocation } from 'react-router';
 
 export function MainNav() {
   const { pathname } = useLocation();
@@ -22,8 +22,8 @@ export function MainNav() {
                 ? 'text-foreground'
                 : 'text-foreground/60',
             )}
-            to={item.href}
             key={item.href}
+            to={item.href}
           >
             {item.title}
           </NavLink>

@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
+import { Button } from '@/components/ui/button';
 
 export function ButtonsPage() {
   return (
@@ -31,7 +31,7 @@ export function ButtonsPage() {
           <Button size="sm">
             <Icons.mail /> Login with Email
           </Button>
-          <Button size="sm" disabled>
+          <Button disabled size="sm">
             <Icons.loader2 className="animate-spin" />
             Please wait
           </Button>

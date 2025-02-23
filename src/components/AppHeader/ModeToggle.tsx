@@ -1,6 +1,6 @@
 import { Icons } from '@/components/Icons';
-import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
+import { Button } from '@/components/ui/button';
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -10,7 +10,7 @@ export function ModeToggle() {
   };
 
   return (
-    <Button onClick={handleClick} variant="outline" size="icon">
+    <Button onClick={handleClick} size="icon" variant="outline">
       {theme === 'light' ? <Icons.moon /> : <Icons.sun />}
     </Button>
   );

@@ -1,5 +1,5 @@
-import { ThemeProvider } from '@/components/ThemeProvider';
 import { routes } from './routes';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
