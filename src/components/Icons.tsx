@@ -1,12 +1,9 @@
-import type { LucideIcon } from 'lucide-react';
 import {
   AtomIcon,
   ChevronRightIcon,
   MailIcon,
   Loader2Icon,
 } from 'lucide-react';
-
-export type Icon = LucideIcon;
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
