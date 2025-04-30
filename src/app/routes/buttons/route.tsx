@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export function ButtonsPage() {
   return (
-    <div className="container flex-1">
+    <div className="container flex-1 w-full">
       <main className="flex flex-col gap-8 py-8">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           Buttons

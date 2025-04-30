@@ -1,6 +1,6 @@
 export function TypographyPage() {
   return (
-    <div className="container flex-1">
+    <div className="container flex-1 w-full">
       <main className="py-8">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           The Joke Tax Chronicles
