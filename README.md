@@ -9,7 +9,9 @@ A minimal template to get started with React and
 2. Styling: TailwindCSS 4 + shadcn/ui
 3. Linting: Code Shaper ESLint configuration
 
-![Screenshot](assets/screenshot.png)
+![Typography](assets/typography.png)
+
+![Buttons](assets/buttons.png)
 
 ## Prerequisites for development
 

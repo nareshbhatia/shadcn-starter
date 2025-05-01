@@ -31,9 +31,32 @@ export function ButtonsPage() {
           <Button size="sm">
             <Icons.mail /> Login with Email
           </Button>
+        </div>
+        <div className="flex gap-4">
+          <Button disabled size="sm">
+            Primary
+          </Button>
+          <Button disabled size="sm" variant="secondary">
+            Secondary
+          </Button>
+          <Button disabled size="sm" variant="destructive">
+            Destructive
+          </Button>
+          <Button disabled size="sm" variant="outline">
+            Outline
+          </Button>
+          <Button disabled size="sm" variant="ghost">
+            Ghost
+          </Button>
+          <Button disabled size="sm" variant="link">
+            Link
+          </Button>
+          <Button disabled size="icon" variant="outline">
+            <Icons.chevronRight />
+          </Button>
           <Button disabled size="sm">
             <Icons.loader2 className="animate-spin" />
-            Please wait
+            Login with Email
           </Button>
         </div>
       </main>
