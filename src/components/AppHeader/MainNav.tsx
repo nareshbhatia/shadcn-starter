@@ -1,8 +1,8 @@
-import type { NavItem } from '../../config/main-nav';
-import { mainNavItems } from '../../config/main-nav';
-import { siteConfig } from '../../config/site';
-import { cn } from '../../lib/utils';
 import { Icons } from '../Icons';
+import type { NavItem } from '@/config/main-nav';
+import { mainNavItems } from '@/config/main-nav';
+import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
 import { NavLink, useLocation } from 'react-router';
 
 function isNavItemActive(item: NavItem, pathname: string) {
