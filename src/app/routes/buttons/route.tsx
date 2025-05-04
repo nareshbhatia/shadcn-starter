@@ -5,7 +5,7 @@ export function ButtonsPage() {
   return (
     <div className="container flex-1 w-full">
       <main className="flex flex-col gap-8 py-8">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
           Buttons
         </h1>
         <div className="flex gap-4">

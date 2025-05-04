@@ -1,8 +1,17 @@
-import { Icons } from '@/components/Icons';
-import { mainNavItems } from '@/config/main-nav';
-import { siteConfig } from '@/config/site';
-import { cn } from '@/lib/utils';
+import type { NavItem } from '../../config/main-nav';
+import { mainNavItems } from '../../config/main-nav';
+import { siteConfig } from '../../config/site';
+import { cn } from '../../lib/utils';
+import { Icons } from '../Icons';
 import { NavLink, useLocation } from 'react-router';
+
+function isNavItemActive(item: NavItem, pathname: string) {
+  return (
+    // item.href === '/' is a special case, matching only if pathname is exactly '/'
+    (item.href === '/' && pathname === '/') ||
+    (item.href !== '/' && pathname.startsWith(item.href))
+  );
+}
 
 export function MainNav() {
   const { pathname } = useLocation();
@@ -18,7 +27,7 @@ export function MainNav() {
           <NavLink
             className={cn(
               'transition-colors hover:text-foreground/80',
-              pathname.startsWith(item.href)
+              isNavItemActive(item, pathname)
                 ? 'text-foreground'
                 : 'text-foreground/60',
             )}
