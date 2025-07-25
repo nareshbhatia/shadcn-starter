@@ -22,11 +22,16 @@ export function ButtonsPage() {
           <Button size="sm" variant="ghost">
             Ghost
           </Button>
-          <Button size="sm" variant="link">
-            Link
-          </Button>
           <Button size="icon" variant="outline">
             <Icons.chevronRight />
+          </Button>
+          {/* Button that looks like a link */}
+          <Button size="sm" variant="link">
+            Button looks like link
+          </Button>
+          {/* Link that looks like a button */}
+          <Button asChild>
+            <a href="https://ui.shadcn.com/">Link looks like button</a>
           </Button>
           <Button size="sm">
             <Icons.mail /> Login with Email
@@ -48,11 +53,14 @@ export function ButtonsPage() {
           <Button disabled size="sm" variant="ghost">
             Ghost
           </Button>
-          <Button disabled size="sm" variant="link">
-            Link
-          </Button>
           <Button disabled size="icon" variant="outline">
             <Icons.chevronRight />
+          </Button>
+          <Button disabled size="sm" variant="link">
+            Button looks like link
+          </Button>
+          <Button disabled asChild>
+            <a href="https://ui.shadcn.com/">Link looks like button</a>
           </Button>
           <Button disabled size="sm">
             <Icons.loader2 className="animate-spin" />
