@@ -59,7 +59,7 @@ export function ButtonsPage() {
           <Button disabled size="sm" variant="link">
             Button looks like link
           </Button>
-          <Button disabled asChild>
+          <Button asChild disabled>
             <a href="https://ui.shadcn.com/">Link looks like button</a>
           </Button>
           <Button disabled size="sm">
